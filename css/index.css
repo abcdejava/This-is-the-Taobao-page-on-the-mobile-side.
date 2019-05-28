@@ -1,0 +1,461 @@
+/*初始化*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #efefef;
+}
+.nav{
+	display: flex;
+	width: 375px;
+	height: 37;
+	background: #FF852A;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav .logo{
+	width: 37px;
+	height: 37px;
+	background-image: url(../img/taobao_logo.png);
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+}
+.nav .search{
+	width: 324px;
+	height: 25px;
+	background: #FF4E22;
+	border-radius: 4px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.nav .search .icon{
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/search-b.svg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center 70%;
+	display: block;
+}
+
+/*轮播*/
+.swiper{
+	width: 375px;
+	height: 120px;
+	background-image: url(../img/huduxian.webp), url(../img/Tzhuanhuan.jpg);
+	background-size: 100% 100%;
+	background-position: 0px 113px, center;
+}
+
+/*图标列表*/
+.iconList{
+	width: 375px;
+	height: 160px;
+	display: flex; /*设置弹性布局*/
+	justify-content: space-around; /*主轴分布*/
+	flex-wrap: wrap;  /*换行*/
+	align-content: space-around;   /*多行侧轴分布*/
+	background-color: #fff;
+}
+
+.iconList .iconItem{
+	width: 20%;
+	height: 67px;
+	display: flex; /*设置弹性布局*/
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 11px;
+	color: rgb(102,102,102);
+	text-decoration: none;
+	
+}
+.iconList .iconItem img{
+	width: 80%;
+	height: auto;
+}
+.iconList .iconItem .text{
+	padding-top: 3px;
+}
+
+/*
+ * 淘宝头条
+ */
+.toutiao{
+	background-color: #FFFFFF;
+	width: 375px;
+	height: 60px;
+	display: flex;
+}
+
+.toutiao .ttLeft{
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/toutiaorewen.webp);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.toutiao .ttMain{
+	width: 232px;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	justify-content: center;
+}
+
+.ttMain .jhItem{
+	width: 232px;
+	height: 19px;
+	display: flex;
+}
+.ttMain .jhItem .tag{
+	display: flex;
+	width: 28px;
+	height: 13px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(230, 10, 31);
+    border: 1px solid rgb(230, 10, 31);
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+.ttMain .jhItem .text{
+	width: 200px;
+	height: 19px;
+	
+	overflow: hidden;  /*溢出隐藏*/
+	white-space: nowrap;  /*不换行*/
+	text-overflow: ellipsis; /*文字超出之后显示的样式*/
+}
+
+.toutiao .ttRight{
+	width: 85px;
+	height: 60px;
+	background-image: url(../img/toutiaorewen3.png),url(../img/toutiaorewen2.png);
+	background-size: 100% 100%;
+}
+
+/*淘抢购*/
+.qg{
+	background-color: #FFF;
+	margin-top: 10px;
+	width: 375px;
+	height: 224px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.qg .qgItem{
+	width: 187.5px;
+	height: 112px;
+	display: flex;
+	border-bottom: 1px solid #efefef;
+}
+.qg .qgItem .left{
+	width: 94px;
+	display: flex;
+	flex-direction: column;
+}
+
+.qg .qgItem .h1{
+	background-image: url(../img/taoqianggou.webp);
+	height: 25px;
+	background-size: auto 100%;
+}
+.qg .qgItem .prod1{
+	flex: 1;
+	background-image: url(../img/yifu.webp);
+	baseline-shift: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+.qg .qgItem .brif{
+	font-size: 12px;
+    color: rgb(153, 153, 153);
+  	padding-left: 10px;
+  	padding-top: 2px;
+}
+.qg .qgItem .right1{
+	flex: 1;
+	background-image: url(../img/maozi.webp);
+	background-size: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+
+
+.qg .qgItem .h2{
+	background-image: url(../img/youhaohuo.webp);
+	height: 25px;
+	background-size: auto 100%;
+}
+.qg .qgItem .prod2{
+	flex: 1;
+	background-image: url(../img/xiezi.webp);
+	baseline-shift: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+.qg .qgItem .right2{
+	flex: 1;
+	background-image: url(../img/huazhuangping.webp);
+	background-size: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+.qg .qgItem .h3{
+	background-image: url(../img/wayouxiaoshiping.webp);
+	height: 25px;
+	background-size: auto 100%;
+}
+.qg .qgItem .prod3{
+	flex: 1;
+	background-image: url(../img/shoubiao.webp);
+	baseline-shift: 75px auto;
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+}
+.qg .qgItem .right3{
+	flex: 1;
+	background-image: url(../img/shouji.webp);
+	background-size: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+
+
+
+.qg .qgItem .h4{
+	background-image: url(../img/bimaiqingdan.webp);
+	height: 25px;
+	background-size: auto 100%;
+}
+.qg .qgItem .prod4{
+	flex: 1;
+	background-image: url(../img/hongyifu.webp);
+	baseline-shift: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+.qg .qgItem .right4{
+	flex: 1;
+	background-image: url(../img/qunzi.webp);
+	background-size: 75px auto;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+}
+
+/*直播*/
+.zhibo{
+	width: 375px;
+	height: 352.5px;
+	margin-top: 20px;
+	position: relative;  /*相对定位*/
+	background-color: #fff;
+	margin-bottom: 43px;
+}
+.zhibo:before{
+	content: "";  /*空值也不能省略*/
+	display: block;
+	width: 375px;
+	height: 29px;
+	position: absolute;  /*绝对定位*/
+	left: 0;
+	top: -13px;
+	background-image: url(../img/TB_zhibo.png);
+	background-size: 100% 100%;
+	z-index: 1;
+}
+
+.zhibo .zbTop{
+	width: 375px;
+	height: 125px;
+	display: flex;
+}
+.zhibo .zbTop .zbTleft{
+	width: 249.5px;
+	height: 125px;
+	background-image: url(../img/TB_Tleft2.webp),url(../img/TB_Tleft1.jpg);
+	background-size: 100% 100%;
+	padding-left: 10px;
+	position: relative;  /*相对定位*/
+}
+.zhibo .zbTop .zbTleft:before{
+	content: "";  /*空值也要写上*/
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/TB_Tleft3.webp);
+	background-size: 100% 100%;
+	position: absolute; /*绝对定位*/
+	right: 15px;
+	bottom: 20px;
+}
+.zhibo .zbTop .title{
+	margin-top: 78px;
+	font-size: 14px;
+	color: #fff;
+}
+.zhibo .zbTop .text{
+	font-size: 12px;
+	color: #fff;
+	opacity: 0.8;  /*透明度0.8*/
+}
+
+.zhibo .zbTop .zbTright{
+	flex: 1;
+	height: 125px;
+	background-image: url(../img/TB_Tleft2.webp),url(../img/TB_baobao.webp);
+	background-image: 100% 100%;
+	padding-left: 10px;
+}
+.zhibo .zbCenter{
+	width: 375px;
+	height: 180px;
+	display: flex;
+}
+.zhibo .zbCenter .liveItem{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.zhibo .zbCenter .liveItem img{
+	width: 100%;
+	height: auto;
+}
+.zhibo .zbCenter .liveItem h1{
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	padding: 5px 10px 0px;
+}
+.zhibo .zbCenter .liveItem p{
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	opacity: 0.8;
+	padding: 0px 10px;
+}
+
+.zhibo .zbBottom{
+	width: 375px;
+	height: 36px;
+	display: flex;
+	align-items: center;  /*盒子居中对齐*/
+	position: relative;  /*相对定位*/
+}
+.zhibo .zbBottom .tag{
+	display: inline-block;
+	font-size: 12px;
+    height: 16px;
+    margin-left: 10px;
+    color: rgb(253, 30, 87);
+    border-style: solid;
+    border-width: 0.5px;
+    place-self: center flex-start;
+    border-color: rgb(253, 30, 87);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    line-height: 15px;
+}
+.zhibo .zbBottom .text{
+	width: 169px;
+	height: 16px;
+	font-size: 12px;
+	padding-left: 5px;
+}
+.zhibo .zbBottom .qfl{
+	width: 39;
+	font-size: 12px;
+	position: absolute; /*绝对定位*/
+	right: 20px;
+	top: 10px;
+}
+.zhibo .zbBottom .qfl:after{
+	content: ">";
+	color: #ccc;
+	padding-left: 5px;
+}
+
+/*tab导航*/
+.tabList{
+	width: 375px;
+	height: 43px;
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #efefef;
+	z-index: 10;
+}
+.tabItem{
+	flex: 1;
+	height: 39px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.tabItem .icon1{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/TB_home.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(0.9);
+}
+.tabItem .icon2{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/TB_cart.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(0.9);
+}
+.tabItem .icon3{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/TB_order_list.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(0.9);
+}
+.tabItem .icon4{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/TB_my.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(0.9);
+}
+.tabItem .icon5{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/TB_more_read.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(0.9);
+}
+
+.tabItem .text{
+	font-size: 10px;
+	color: #5d656b;
+	transform: scale(0.9);
+}
